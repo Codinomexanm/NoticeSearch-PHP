@@ -11,7 +11,7 @@ $xPath = new DOMXPath($document);
 $domNodeList = $xPath->query(expression: './/div[@class="'.$hq.'"]');
 
 echo "<table>
- <tr>Resultados</tr>";
+ <tr>Resultados:</tr>";
 foreach($domNodeList as $elemento){
         $virus= $elemento->textContent;
         $xxt =$elemento->firstElementChild->getAttribute('href');
